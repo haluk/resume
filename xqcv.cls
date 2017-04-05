@@ -314,7 +314,7 @@
 % Bibliography 
 %----------------------------------------------------------------------------------------
 
-\usepackage[sorting=ynt,bibstyle=numeric,labelyear=false,defernumbers=true,maxnames=20,firstinits=true,uniquename=init]{biblatex}
+\usepackage[sorting=ydnt,bibstyle=numeric,labelyear=false,defernumbers=true,maxnames=20,firstinits=true,uniquename=init]{biblatex}
 \DeclareFieldFormat{url}{\url{#1}}
 \DeclareFieldFormat[article]{pages}{#1}
 \DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
