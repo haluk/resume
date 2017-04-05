@@ -1,0 +1,225 @@
+%----------------------------------------------------------------------------------------
+% 
+% LaTeX CV class: xqcv 
+% author: Xian Qiu
+% version: beta 0
+%
+% Note: 1. do not use \subsubsection.
+%       2. itemized lists should not be more than two levels
+%       3. publications must be compiled by biber.
+%
+% any problem? do not ask me. 
+%
+%----------------------------------------------------------------------------------------
+
+
+\documentclass[showupdate]{xqcv}
+% two options: <print> -- header is not filled 
+%              <showupdate> -- update date is shown in the header
+
+
+%----------------------------------------------------------------------------------------
+% bibliography classifications
+%----------------------------------------------------------------------------------------
+
+
+% Specify the bibliography file to include publications
+\bibliography{bibliography.bib} 
+\addtocategory{papers}{tomov2016distinct, wang2016detecting, Nalbantoglu201442, Isci15032014, Dogan2014genome}
+% \addtocategory{proceedings}{KEQI11a, KEQI11b,KEQI13a}
+% \addtocategory{workingpapers}{KEQI13b}
+\addtocategory{chapters}{Dogan2014objective}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+% header
+%----------------------------------------------------------------------------------------
+
+
+\name{Haluk}{Dogan} % first name and last name
+% \currentposition{PhD at University of Nebraska-Lincoln} % current job title/field
+% contact info
+\address{1432 B St Apt 2\\
+         Lincoln, Nebraska 68502, USA
+       }
+\phonenumber{(402) 419-8475} % phone number
+\email{hlk.dogan@gmail.com}  % email address
+% \homepage{http://goo.gl/hO4HF} % homepage
+\headerboxheight{6cm} % this defines the height of shading
+
+
+\maketitle
+
+\section{Research Interests}
+Machine learning, graphical models, graph algorithms, functional programming.
+
+%----------------------------------------------------------------------------------------
+% education
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{entrylist}
+  \entry
+  {2013 -}
+  {\textbf{Doctor of Philosophy}}
+  {University of Nebraska-Lincoln, USA}
+  {
+    \textit{Department of Electrical and Computer Engineering}
+  }
+  \entry
+  {2011 - 2013}
+  {\textbf{Master of Science}}
+  {Bogazici University, Istanbul - Turkey}
+  {
+   \textit{Department of Computer Engineering} \\
+   \textit{\footnotesize{Thesis: Discovering Gene Interaction Atlas Using External Biological Knowledge}}
+   }
+   \entry
+   {2008 - 2009}
+   {\textbf{Exchange Student}}
+   {Aarhus University, Denmark}
+   {
+    \textit{Department of Computer Science}
+   }
+  \entry
+  {2006 - 2010}
+  {\textbf{Bachelor of Science}}
+  {Istanbul Bilgi University - Turkey}
+  {\textit{Department of Computer Science}}
+\end{entrylist}
+
+\section{Employment History}
+\begin{entrylist}
+  \hentry
+  {Aug 2013 -}
+  {\textbf{University Of Nebraska-Lincoln, Lincoln, NE}}
+  {\textit{Graduate Research Assistant, Department of Electrical and Computer Engineering}}
+  {}
+
+  \hentry
+  {Nov 2010 - Jun 2013}
+  {\textbf{Istanbul Bilgi University, Istanbul, Turkey}}
+  {\textit{Teaching and Research Assistant, Department of Genetics and Bioengineering Engineering}}
+  {
+    \begin{itemize}
+      \item \textbf{BIOE 341}, Bioinformatics; Led weekly lab, and office hours, grading (quizzes, homework assignments, projects, midterms), and proctored exams.
+      \item \textbf{CMPE 100}, Introduction to Computing; Led weekly lab, and office hours, grading (quizzes, homework assignments, projects), and proctored exams.
+      \item \textbf{ENGR 230}, Probability and Random Processes; Led weekly lab, and office hours, grading (quizzes, homework assignments, projects, midterms), and proctored exams.
+      \item Built an interactive ICGEB 2012 Workshop website using Django Web Framework.
+    \end{itemize}
+  }
+
+  \hentry
+  {Mar 2010 - Jun 2010}
+  {\textbf{i2i Systems, Istanbul, Turkey}}
+  {Java Developer}
+  {My responsibilities included importing large dataset into Oracle database after post stage of data preprocessing. The facilitating technologies were Java, Spring Framework, and JExcel.}
+
+  \hentry
+  {Aug 2009 - Mar 2010}
+  {\textbf{GNA, Istanbul, Turkey}}
+  {Business Intelligence Consultant}
+  {
+    \begin{itemize}
+      \item Design, develop, and support Pentaho Reports applications used by business users at a large company setting.
+      \item Design, develop, and support creation of tables, stored procedures, functions, views, triggers, and all relevant database objects using Oracle database.
+    \end{itemize}
+  }
+  
+  \hentry
+  {Mar 2008 - June 2008}
+  {\textbf{Aradiom, Istanbul, Turkey}}
+  {Java Developer}
+  {
+    Designed and implemented back-end RegEx editor using JSF framework. My responsibilities were focused on parsing various statements into RegEx expressions.
+  }
+
+\end{entrylist}
+
+% \subsection{Certificates}
+
+% \begin{entrylist}
+%   \entry
+%   {2010-2013}
+%   {LNMB diploma}
+%   {Utrecht University, The Netherlands}
+%   {LNMB: Dutch Network on the Mathematics of Operations Research}
+%   \entry
+%   {2008}
+%   {International Engish language test, grade 7 (over 10)}
+%   {IELTS}
+%   {}
+% \end{entrylist}
+
+% \section{Awards} 
+ 
+% \begin{entrylist}
+%   \entry
+%   {2008-2012}
+%   {National scholarship, \officialeuro 1200/month}
+%   {China Scholarship Council}
+%   {}
+%   \entry
+%   {2008-2010}
+%   {UT scholarship, \officialeuro 10,000/year}
+%   {University of Twente}
+%   {}
+%   \entry
+%   {2004-2006}
+%   {NPU scholarship, first grade, RMB 1,000/year}
+%   {Northwestern Polytechnical University}
+%   {}
+%   \entry
+%   {2006}
+%   {First prize of the ``math modeling'' competition}
+%   {Northwestern Polytechnical University}
+%   {}
+%   \entry
+%   {2004}
+%   {AMECO scholarship, RMB 1,000}
+%   {Northwestern Polytechnical University}
+%   {10 out of 3000 students}
+% \end{entrylist}
+
+\section{Project Summary}
+\begin{itemize}
+  \item \footnotesize{Implemented and designed I/O-efficient merge-sort algorithm.}
+  \item \footnotesize{Implemented and designed I/O-efficient heap and heap sort algorithm.}
+  \item \footnotesize{Implemented offline and online versions of minimum spanning tree problem using sparsification technique.}
+  \item \footnotesize{Implemented and designed McCreight's suffix tree construction algorithm.}
+  \item \footnotesize{Implemented and designed Stoye-Gusfield algorithm for finding all occurrences of tandem repeats.}
+  \item \footnotesize{Designed a distributed application that sends SMS messages by connecting to SMSC via SMPP by using Apache Thrift RPC Framework.}
+  \item \footnotesize{Implemented and designed J48 decision tree.}
+  \item \footnotesize{Implemented and designed Huffman Coding and Arithmetic Coding algorithms.}
+  \item \footnotesize{Implemented and designed Multi-Layer Perceptron Neural Network for classification.}
+  \item \footnotesize{Implemented and designed N\"{a}ive Bayes algorithm for classification.}
+  \item \footnotesize{Implemented and designed Non-parametric Bayesian Method for clustering.}
+\end{itemize}
+
+\section{Skills Summary}
+\begin{entrylist}
+  \lentry{Programming Languages}{Java, Python, Scala, R, Scheme, C, Haskell, SQL} \\                       
+  \lentry{Script Languages}{Bash Script, \LaTeX$\backslash$Tikz, Markdown}  
+  \lentry{Database Systems}{Oracle, PostgreSQL, MySQL}
+  \lentry{Web Development}{Django Web Framework, Vaadin RIA Web Framework, Spring MVC}
+  \lentry{Database Technologies}{Hibernate ORM, SQLAlchemy}
+  \lentry{Scientific Programming}{Numpy, Scipy, Scikit-Learn, Matplotlib, Seaborn, Smile, aGrUM, Tetrad}  
+  \lentry{Development Technologies}{PyCharm, IntelliJ IDEA, DataGrip, Eclipse, Sublime Text Editor, Atom, Aqua Studio, Weka, RStudio, Matlab}
+  \lentry{Build Tools}{Maven, Sbt, Gradle, SCons, CMake}
+  \lentry{Version Control System}{Git, SVN, Mercurial}
+  \lentry{Operating Systems}{Linux, Mac OS X, Windows}
+  \lentry{Foreign Language Skills}{Turkish \rtext{Native}\\
+                     English \rtext{Advanced}\\
+                     Danish/German \rtext{Beginner}}
+\end{entrylist}
+
+\newpage
+\section{Publications}
+\printbib{papers}
+\printbib{chapters}
+
+\section{References}
+\textit{References available upon request.}
+\end{document}
